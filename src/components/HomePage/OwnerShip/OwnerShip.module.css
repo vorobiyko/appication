@@ -1,0 +1,45 @@
+.wrapperContent{
+    text-align: center;
+    width: 100%;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-position: center;
+    background-size: 100% 100%;
+    background-image: url("https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/3r6dJWbBm1rf3SmLAbVoJg/7cb2ab27714929fc0c9b956932eef3ad/R6E_CrossOwnership.jpg");
+}
+.header{
+    margin-top: 4%;
+    width: 50%;
+    font-size: 40px;
+    color: #FFE32D; /* прозрачный цвет букв */
+    -webkit-text-stroke: 1px black;
+}
+.text{
+    font-size: 25px;
+    color: white;
+    width: 70%;
+    -webkit-text-stroke: 1px black;
+}
+@media screen and (max-width: 1000px){
+    .header{
+        margin-top: 2%;
+        width: 98%;
+        font-size: 30px;
+    }
+    .text{
+        font-size: 20px;
+        width: 90%;
+        margin-left: 4%;
+    }
+}
+@media screen and (max-width: 800px){
+    .header{
+        font-size: 20px;
+    }
+    .text{
+        display: none;
+    }
+}

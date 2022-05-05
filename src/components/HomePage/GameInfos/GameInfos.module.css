@@ -1,0 +1,91 @@
+.settingsGameBlock{
+    height: 100%;
+    width: 100%;
+    background-color: #FFE32D;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header{
+    margin: 5% 0 1.5% 0;
+    text-align: center;
+}
+.paragraf{
+    padding: 0 10px;
+    font-size: 20px;
+    width: 50%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.cards{
+    display: flex;
+    flex-direction: row;
+    max-width: 95%;
+    margin: 4% 0 10% 0;
+}
+.card{
+    width: 45vh;
+    height: 45vh;
+    background-image: url("https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/3asu9CTykBTVl34rC6aOO6/a3f0280b1af8915e43525fabe7aa3c0d/R6E_GameInfo_LeadEliteRainbow.jpg");
+    background-size: 100% 100%;
+    background-position: center;
+    color: #FFE32D;
+    text-align: center;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card:nth-child(3){
+    background-image: url("https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/76X22QzCeTupLFjlTLHP8Q/98cc99bfb492493c44e126052206445b/R6E_GameInfo_FightArchaeans.jpg");
+}
+.card:nth-child(2){
+    margin: 0 20px;
+    background-image: url("https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/3PQrQMf3E51z3s0XvvspD1/d185e87e6ed3d765701af6e4a739d82c/R6E_GameInfo_RiskItAll.jpg");
+}
+.colorP{
+    color: white;
+    font-size: 22px;
+}
+.sizePar{
+    margin-bottom: 30px;
+    display: flex;
+    overflow: hidden;
+    height: 11vh;
+    transition: ease-in-out .5s;
+}
+.card:nth-child(1):hover .sizePar{
+    margin-top: 15px;
+    display: flex;
+    overflow: auto;
+    height: auto;
+}
+.card:nth-child(2):hover .sizePar{
+    margin-top: 15px;
+    display: flex;
+    overflow: visible;
+    height: auto;
+}
+.card:nth-child(3):hover .sizePar{
+    margin-top: 15px;
+    display: flex;
+    overflow: auto;
+    height: auto;
+}
+
+@media screen and (max-width: 1050px){
+    .header{
+        margin: 10% 0 3% 0;
+        font-size: 20px;
+    }
+    .paragraf{
+        font-size: 20px;
+        width: 80%;
+    }
+    .cards{
+        flex-direction: column;
+    }
+    .card:nth-child(2){
+        margin: 20px 0;
+    }
+}

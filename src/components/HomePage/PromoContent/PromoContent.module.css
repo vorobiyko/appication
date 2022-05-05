@@ -1,0 +1,74 @@
+.settingsPromo{
+    height: 100%;
+    width: 100%;
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://static-dm.akamaized.net/extraction/prod/d6c19c116706ddbf8ad007a796fa1965.jpg");
+    background-size: 100% 100%;
+    background-position: center;
+    text-align: center;
+    color: #FFE32D;
+    padding-bottom: 4%;
+}
+.title{
+    margin: 3% 0 1.5% 0;
+}
+.paragraf{
+    width: 60%;
+    color: white;
+    font-size: 22px
+}
+.cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-width: 90%;
+    max-width: 100%;
+    margin: 4% 0 4% 0;
+}
+.card{
+    width: 45vh;
+    height: 45vh;
+    background-image: url("https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/7mpEDNdAF4JxfrTEQcrQfd/ea8b3958653be9f745012a7b4302d199/R6E_Operator_HP_Lion_480x480.png");
+    background-size: 100% 100%;
+    background-position: center;
+    color: #FFE32D;
+    text-align: center;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    opacity: 0.6;
+    transition: ease-in-out 1s;
+
+}
+.card:nth-child(3){
+    background-image: url("https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2xXZjBkNg81dA4RxrJHz3S/15d8f429d5bc49fc078021bbb1e2fd6d/R6E_Operator_HP_Vigil_480x480.png");
+}
+.card:nth-child(2){
+    margin: 0 20px;
+    background-image: url("https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/5jmG5L5yYKRsoW0lGfdMIR/953087ead20a97779e5ecb6cf422bbd9/R6E_Operator_HP_Ela_480x480.png");
+}
+@media screen and (max-width: 850px) {
+    .cards{
+        flex-direction: column;
+    }
+    .card:nth-child(1),.card:nth-child(3){
+        display: none;
+    }
+    .paragraf{
+        width: 80%;
+        color: white;
+        font-size: 20px
+    }
+    .title{
+        margin: 10% 0 3% 0;
+        font-size: 30px;
+    }
+
+
+}

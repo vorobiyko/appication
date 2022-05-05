@@ -1,0 +1,175 @@
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    background-color: #FFE32D;
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    box-shadow: 0px 3px 5px 1px rgba(0,0,0,0.5);
+    z-index: 2;
+}
+.menu{
+    display: none;
+}
+.sizeIcon{
+    width: 120px;
+    height: 60px;
+    margin-left: 15px;
+}
+.position{
+    display: flex;
+}
+.item{
+    height: 60px;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+    padding: 0px 10px;
+    transition: background .2s ease-in
+
+}
+.item:hover{
+    background-color: black;
+    color: white;
+
+
+}
+.position:last-child{
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 0px 10px;
+    transition: background .2s ease-in
+}
+.position:last-child:hover{
+    background-color: #1E1E1E;
+    color: #A2A2A2;
+}
+.active{
+    color: white;
+    background-color: black;
+    text-decoration: none;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 0px 10px;
+}
+.activeBtnBuy{
+    height: 60px;
+    color: #FFE32D;
+    background-color: black;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 0px 10px;
+}
+
+
+/*------------------------------------------------------------------*/
+/*Mobile CSS*/
+@media screen and (max-width: 850px){
+    .nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #FFE32D;
+        position: fixed;
+        z-index: 2;
+        width: 100%;
+        height: 60px;
+        box-shadow: 0px 3px 5px 1px rgba(0,0,0,0.5);
+        justify-self: end;
+    }
+    .forMobVer{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .menu{
+        height: 22px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-left: 15px;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+    .menu:hover .line{
+        background-color: #0A005F;
+        border: #0A005F 1px solid;
+    }
+    .line{
+        height: 0px;
+        width: 22px;
+        border: black 1px solid;
+        background-color: black;
+    }
+    .line.act{
+        height: 0px;
+        background-color: white;
+        border: ghostwhite 1px solid;
+    }
+    .sizeIcon{
+        width: 120px;
+        height: 60px;
+        margin: 0;
+    }
+    .position{
+        display: none;
+    }
+    .position:last-child{
+        display: flex;
+    }
+    .item{
+        height: 60px;
+        text-decoration: none;
+        color: black;
+        display: flex;
+        align-items: center;
+        padding: 0px 10px;
+        transition: background .2s ease-in
+
+    }
+    .item:hover{
+        background-color: black;
+        color: white;
+
+
+    }
+    .position:last-child{
+        height: 60px;
+        background-color: black;
+        color: white;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        padding: 0px 10px;
+        transition: background .2s ease-in;
+    }
+    .position:last-child:hover{
+        background-color: #1E1E1E;
+        color: #A2A2A2;
+    }
+    .active{
+        color: white;
+        background-color: black;
+        text-decoration: none;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        padding: 0px 10px;
+    }
+    .activeBtnBuy{
+        height: 60px;
+        color: #FFE32D;
+        background-color: black;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        padding: 0px 10px;
+    }
+}

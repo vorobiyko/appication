@@ -1,0 +1,111 @@
+h1 h2 h3{
+    margin: 0;
+    padding: 0;
+}
+.media{
+    width: 100%;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+
+}
+.loopingVideo{
+    width: 100%;
+    z-index: -2;
+    position: absolute;
+    top: -10%;
+}
+.slideContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30%;
+    padding-left: 20px;
+    z-index: 0;
+}
+.title{
+    margin-bottom: 10px;
+    color: #FFE32D;
+    font-size: 40px;
+}
+.content{
+    color: white;
+    font-size: 30px;
+}
+.btn{
+    margin-top: 20px;
+}
+.btn:hover .btnBox{
+    border: white solid 1px;
+    background-color: gray;
+}
+.btn:hover .propsTextBtn{
+    color: white;
+}
+.btnBox{
+    border: #FFE32D solid 1px;
+    width: 134px;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    padding: 0 10px;
+}
+.propsTextBtn{
+    color: #FFE32D;
+    margin: 10px 0;
+}
+@media screen and (max-width: 1050px){
+    .slideContent{
+        width: 70%;
+    }
+}
+@media screen and (max-width: 850px){
+    .slideContent{
+        width: 50%;
+    }
+    .title{
+        font-size: 30px;
+    }
+    .content{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 600px){
+    .slideContent{
+        width: 100%;
+    }
+    .title{
+        margin-bottom: 0px;
+    }
+    .btn{
+        margin-top: 5px;
+    }
+}
+@media screen and (max-width: 445px){
+    .slideContent{
+        width: 100%;
+    }
+    .title{
+        margin-bottom: -1px;
+    }
+    .btn{
+        margin-top: 5px;
+    }
+    .title{
+        font-size: 25px;
+    }
+    .content{
+        font-size: 15px;
+    }
+    .propsTextBtn{
+        color: #FFE32D;
+        margin: 5px 0;
+    }
+    .title{
+        font-size: 21px;
+    }
+    .content{
+        font-size: 16px;
+    }
+
+}

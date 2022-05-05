@@ -1,0 +1,64 @@
+.navMob{
+    display: none;
+}
+@media screen and (max-width: 850px){
+    .navMob{
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-color: #FFE32D;
+        position: fixed;
+        top: 60px;
+        transform: translateX(-100%);
+        transition: ease-in-out .5s;
+    }
+    .navMob.active{
+        transform: translateX(0);
+    }
+    .menuContent{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 0 0 15px;
+    }
+    h2{
+        margin: 5px 0;
+    }
+    h2:hover{
+        color: white;
+    }
+    .activeComponent{
+        color: white;
+    }
+
+}
+@media screen and (max-device-width: 500px){
+    .navMob{
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-color: #FFE32D;
+        position: fixed;
+        top: 60px;
+        transform: translateX(-100%);
+    }
+    .navMob.active{
+        transform: translateX(0);
+    }
+    .menuContent{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 0 0 15px;
+    }
+    h2{
+        margin: 5px 0;
+    }
+    h2:hover{
+        color: white;
+    }
+    .activeComponent{
+        color: white;
+    }
+
+}
